@@ -1,0 +1,14 @@
+._*
+.DS_Store
+.git
+assets
+src
+.gitignore
+.travis.yml
+postcss.config.js
+tsconfig.json
+webpack.config.js
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
+yarn.lock

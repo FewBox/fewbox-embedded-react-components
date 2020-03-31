@@ -1,0 +1,26 @@
+.fb-btn{
+    font-size: 14px;
+    margin: 0 6px;
+    padding: 6px 16px;
+    min-width: 64px;
+    border: 0px;
+    color: #ffffff;
+}
+.fb-btn-normal{
+    @extend .fb-btn;
+}
+.fb-btn-text{
+    @extend .fb-btn;
+}
+.fb-btn-primary{
+    &:hover{
+        background-color: $primary-color*0.5;
+    }
+    background-color: $primary-color;
+}
+.fb-btn-secondary{
+    &:hover{
+        background-color: $primary-color*0.5;
+    }
+    background-color: $secondary-color;
+}

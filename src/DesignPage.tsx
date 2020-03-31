@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Button from './Button';
+import Button, { ButtonType, ButtonCategory } from './Button';
+import Divider from './Divider'
 
 export interface IDesignPageProps {
 }
@@ -9,7 +10,11 @@ class DesignPage extends React.Component<IDesignPageProps, any> {
     return (
       <div>
         <div>
-          <Button caption="OK" onClick={() => { console.log('Click OK.'); }} />
+          <Button category={ButtonCategory.Normal} type={ButtonType.Primary} caption="Normal" onClick={() => { console.log('Click Normal.'); }} />
+          <Button category={ButtonCategory.Normal} type={ButtonType.Secondory} caption="Text" onClick={() => { console.log('Click Text.'); }} />
+        </div>
+        <div>
+          <Divider />
         </div>
       </div>
     );

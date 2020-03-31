@@ -5,6 +5,7 @@ import { IntlProvider } from 'react-intl';
 import langs from './langs';
 // Page
 import DesignPage from './DesignPage';
+import './App.scss';
 
 export interface AppProps {
 }

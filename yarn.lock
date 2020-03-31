@@ -14,7 +14,7 @@
 
 "@fewbox/theme@^0.0.2":
   version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@fewbox/theme/-/theme-0.0.2.tgz#9789e080575b5464b28b3837d0b153e0e30719e9"
+  resolved "https://registry.npm.taobao.org/@fewbox/theme/download/@fewbox/theme-0.0.2.tgz#9789e080575b5464b28b3837d0b153e0e30719e9"
 
 "@formatjs/intl-displaynames@^1.2.2":
   version "1.2.2"

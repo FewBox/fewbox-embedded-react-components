@@ -1,0 +1,23 @@
+/* Typography */
+// type scale
+// Heading sizes - mobile
+// h4—h6 remain the same size on both mobile & desktop
+$h-mobile: 40px;
+$h0-mobile: 32px;
+$h1-mobile: 26px;
+$h2-mobile: 22px;
+$h3-mobile: 18px;
+// Heading sizes - desktop
+$h-desktop: 48px;
+$h0-desktop: 40px;
+$h1-desktop: 32px;
+$h2-desktop: 24px;
+$h3-desktop: 20px;
+$h4-desktop: 16px;
+$h5-desktop: 14px;
+$h6-desktop: 12px;
+$font-weight-bold: 600 !default;
+$font-weight-light: 300 !default;
+$lh-condensed-ultra: 1 !default;
+$lh-condensed: 1.25 !default;
+$lh-default: 1.5 !default;

@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const theme = require('@fewbox/theme');
 
 const config = {
     mode: 'development',
@@ -44,24 +43,7 @@ const config = {
                     'style-loader',
                     'css-loader',
                     'postcss-loader',
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            prependData: (loaderContext) => {
-                                const { resourcePath, rootContext } = loaderContext;
-                                let themeString = '';
-                                Object.keys(theme).forEach((themeKey, themeIndex) => {
-                                    if (resourcePath.indexOf('App.scss') == -1) {
-                                        themeString += `$${themeKey}:${theme[themeKey]};`;
-                                    }
-                                    else {
-                                        console.log(`Ignore App scss... [${resourcePath}]`);
-                                    }
-                                });
-                                return themeString;
-                            },
-                        },
-                    },
+                    'sass-loader',
                 ]
             }
         ]

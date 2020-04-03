@@ -11,7 +11,7 @@ class DesignPage extends React.Component<IDesignPageProps, any> {
       <div>
         <div>
           <Button category={ButtonCategory.Normal} type={ButtonType.Primary} caption="Normal" onClick={() => { console.log('Click Normal.'); }} />
-          <Button category={ButtonCategory.Normal} type={ButtonType.Secondory} caption="Text" onClick={() => { console.log('Click Text.'); }} />
+          <Button category={ButtonCategory.Text} type={ButtonType.Secondory} caption="Text" onClick={() => { console.log('Click Text.'); }} />
         </div>
         <div>
           <Divider />

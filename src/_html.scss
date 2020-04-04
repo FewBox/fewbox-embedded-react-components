@@ -1,0 +1,42 @@
+// hr
+$hr-margin-y: 0;
+$hr-color: $secondary;
+$hr-opacity: 1;
+$hr-height: 1px;
+// heading
+$headings-margin-bottom: 0;
+$headings-font-weight: 12;
+$headings-line-height: 12;
+$headings-color: $primary;
+// p
+$paragraph-margin-bottom: 0;
+// dt
+$dt-font-weight: $font-weight;
+// mark
+$mark-padding: 0;
+$mark-bg: $background;
+// sub sup
+$sub-sup-font-size: $font-size;
+// a
+$link-color: $on-primary;
+$link-decoration: "none";
+$link-hover-color: $on-secondary;
+$link-hover-decoration: "none";
+// pre code kdb samp
+$font-family-monospace: "Inter, sans-serif";
+$code-font-size: $font-size;
+$pre-color: $on-primary;
+$code-color: $on-primary;
+$kbd-padding-x: 0;
+$kbd-padding-y: 0;
+$kbd-font-size: $font-size;
+$kbd-color: $on-primary;
+$kbd-bg: $background;
+$nested-kbd-font-weight: $font-weight;
+// table
+$table-cell-padding: 0;
+$table-caption-color: $on-primary;
+// legend
+$legend-margin-bottom: 0;
+$legend-font-size: $font-size;
+$legend-font-weight: $font-weight;

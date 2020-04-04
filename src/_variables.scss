@@ -1,20 +1,25 @@
-/* Breakpoints */
-@import './mixins';
 @import './colorsystem';
 @import './spacing';
 @import './typography';
+@import './shape';
 
 /****************************************************************/
 /* Colors */
-// backgroud color
-$bg-light: $gray-000;
-$bg: $gray-100;
-$bg-dark: $gray-900;
-// text color
-$text-light: $gray-500;
-$text: $gray-600;
-$text-dark: $gray-900;
-// component background color
-$
-// component font color
-
+// Screens and components
+$primary: $gray-500 !default;
+$primary-variant: $gray-700 !default;
+// Floating action buttons, selection controls, like sliders and switches, highlighting selected text, progress bars, links and headlines
+$secondary: $blue-gray-500 !default;
+$secondary-variant: $blue-gray-700 !default;
+// Surfaces of components, such as cards, sheets, and menus
+$surface: $white;
+// App background
+$background: $white !default;
+// Error
+$error: $red-500 !default;
+// Typography
+$on-primary: $black;
+$on-secondary: $white;
+$on-background: $white;
+$on-surface: $white;
+$on-error: $black;

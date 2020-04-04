@@ -43,7 +43,21 @@ const config = {
                     'style-loader',
                     'css-loader',
                     'postcss-loader',
-                    'sass-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        },
+                    },
+                    {
+                        loader: 'sass-resources-loader',
+                        options: {
+                            sourceMap: true,
+                            resources: [
+                                path.resolve(__dirname, 'src/_variables.scss')
+                            ]
+                        }
+                    }
                 ]
             }
         ]

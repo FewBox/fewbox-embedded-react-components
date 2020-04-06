@@ -24,7 +24,9 @@
         "removeComments": true
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "assets/icons/**/*",
+        "custom.d.ts"
     ],
     "exclude": [
         "node_modules",

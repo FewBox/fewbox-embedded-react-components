@@ -18,7 +18,14 @@ const config = {
         rules: [
             { test: /\.ts$/, use: 'ts-loader' },
             { test: /\.tsx$/, use: 'ts-loader' },
-            { test: /\.svg$/, use: ['svg-inline-loader'] },
+            {
+                test: /\.svg$/, use: [
+                    {
+                        loader: 'svg-inline-loader',
+                        options: { removeSVGTagAttrs: true }
+                    }
+                ]
+            },
             {
                 test: /\.(sa|sc)ss$/,
                 include: [path.join(__dirname, 'src')],
@@ -38,7 +45,8 @@ const config = {
                         options: {
                             sourceMap: true,
                             resources: [
-                                path.resolve(__dirname, 'src/_variables.scss')
+                                path.resolve(__dirname, 'src/_variables.scss'),
+                                path.resolve(__dirname, 'src/_components.scss')
                             ]
                         }
                     }

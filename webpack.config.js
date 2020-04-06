@@ -32,7 +32,14 @@ const config = {
             { test: /\.ts$/, use: 'ts-loader' },
             { test: /\.tsx$/, use: 'ts-loader' },
             { test: /\.(png|jpg|gif|eot|ttf|woff|woff2|ico)$/, use: 'url-loader' },
-            { test: /\.svg$/, use: ['svg-inline-loader'] },
+            {
+                test: /\.svg$/, use: [
+                    {
+                        loader: 'svg-inline-loader',
+                        options: { removeSVGTagAttrs: true }
+                    }
+                ]
+            },
             {
                 test: /\.css$/,
                 use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
@@ -54,7 +61,8 @@ const config = {
                         options: {
                             sourceMap: true,
                             resources: [
-                                path.resolve(__dirname, 'src/_variables.scss')
+                                path.resolve(__dirname, 'src/_variables.scss'),
+                                path.resolve(__dirname, 'src/_components.scss')
                             ]
                         }
                     }

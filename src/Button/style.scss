@@ -1,31 +1,36 @@
-.fb-btn{
-    margin: 0 6px;
-    padding: 6px;
-    font-size: $font-size;
+.button{
+    margin: 0 $margin;
+    padding: $padding;
+    border-width: $border-width;
     border-radius: $radius;
     letter-spacing: 0.04em;
     min-width: 60px;
-    border-width: 1px;
 }
-.fb-btn-normal{
-    color: $on-primary;
-    @extend .fb-btn;
+.button-normal{
+    @extend .button;
 }
-.fb-btn-text{
+.button-text{
     background-color: $white !important;
-    @extend .fb-btn;
+    @extend .button;
 }
-.fb-btn-primary{
+.button-icon{
+    border-width: 0;
+    background-color: $white !important;
+    @extend .button;
+}
+.button-primary{
     &:hover{
         background-color: $primary * 0.5;
     }
-    border-color: $primary;
+    border-color: $on-primary;
     background-color: $primary;
+    color: $on-primary;
 }
-.fb-btn-secondary{
+.button-secondary{
     &:hover{
         background-color: $secondary * 0.5;
     }
+    border-color: $on-secondary;
     border-color: $secondary;
     background-color: $secondary;
 }

@@ -17,7 +17,7 @@ export enum ButtonType {
 export interface IButtonProps {
   category?: ButtonCategory;
   type?: ButtonType;
-  caption: string;
+  caption: string | JSX.Element;
   iconSize?: IconSize;
   onClick: () => void;
 }
@@ -52,7 +52,13 @@ export default class Button extends React.PureComponent<IButtonProps> {
       return className;
     });
 
-    let content = this.props.category == ButtonCategory.Icon ? <Icon icon={this.props.caption} size={this.props.iconSize} /> : <span>{this.props.caption}</span>
+    let content;
+    if (this.props.category == ButtonCategory.Icon && typeof (this.props.caption) == 'string') {
+      content = <Icon icon={this.props.caption} size={this.props.iconSize} />;
+    }
+    else {
+      content = this.props.caption;
+    }
     return (
       <button className={className} onClick={this.props.onClick} type="button">
         {content}

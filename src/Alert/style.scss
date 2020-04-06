@@ -4,4 +4,13 @@
     border-radius: $radius;
     border-color: $primary;
     border-style: solid;
+    position: relative;
+    height: 28px;
+    span{
+        line-height: 28px;
+    }
+    button{
+        position: absolute;
+        right: 0;
+    }
 }

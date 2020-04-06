@@ -10,12 +10,17 @@
     @extend .button;
 }
 .button-text{
-    background-color: $white !important;
+    background-color: inherit !important;
     @extend .button;
 }
 .button-icon{
     border-width: 0;
-    background-color: $white !important;
+    background-color: inherit !important;
+    @extend .button;
+}
+.button-link{
+    border-width: 0;
+    background-color: inherit !important;
     @extend .button;
 }
 .button-primary{

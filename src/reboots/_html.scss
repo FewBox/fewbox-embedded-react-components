@@ -18,10 +18,10 @@ $mark-bg: $background;
 // sub sup
 $sub-sup-font-size: $font-size;
 // a
-$link-color: $on-primary;
-$link-decoration: "none";
-$link-hover-color: $on-secondary;
-$link-hover-decoration: "none";
+$link-color: $black;
+$link-decoration: none;
+$link-hover-color: $black;
+$link-hover-decoration: none;
 // pre code kdb samp
 $font-family-monospace: "Inter, sans-serif";
 $code-font-size: $font-size;

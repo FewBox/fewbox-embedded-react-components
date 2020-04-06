@@ -6,7 +6,8 @@ import { IconSize, Icon } from '..';
 export enum ButtonCategory {
   Normal,
   Text,
-  Icon
+  Icon,
+  Link
 }
 
 export enum ButtonType {
@@ -45,6 +46,9 @@ export default class Button extends React.PureComponent<IButtonProps> {
           break;
         case ButtonCategory.Icon:
           className += ' button-icon';
+          break;
+        case ButtonCategory.Link:
+          className += ' button-link';
           break;
         default:
           break;

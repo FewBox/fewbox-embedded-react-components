@@ -1,6 +1,6 @@
 {
   "name": "@fewbox/embedded-react-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "FewBox embedded React components lib.",
   "main": "dist/index.js",
   "files": [

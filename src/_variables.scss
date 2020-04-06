@@ -12,7 +12,7 @@ $primary-variant: $gray-700 !default;
 $secondary: $blue-gray-500 !default;
 $secondary-variant: $blue-gray-700 !default;
 // Surfaces of components, such as cards, sheets, and menus
-$surface: $white;
+$surface: $white !default;
 // App background
 $background: $white !default;
 // Error
@@ -20,6 +20,6 @@ $error: $red-500 !default;
 // Typography
 $on-primary: $white !default;
 $on-secondary: $white !default;
-$on-background: $white !default;
-$on-surface: $white !default;
+$on-background: $black !default;
+$on-surface: $black !default;
 $on-error: $black !default;

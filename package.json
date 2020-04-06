@@ -1,6 +1,6 @@
 {
   "name": "@fewbox/embedded-react-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "FewBox embedded React components lib.",
   "main": "dist/index.js",
   "files": [
@@ -63,6 +63,7 @@
     "react-router-dom": "^5.1.2"
   },
   "dependencies": {
+    "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"

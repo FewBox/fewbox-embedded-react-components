@@ -35,6 +35,7 @@ export default class Button extends React.PureComponent<IButtonProps> {
           className = 'button-secondary';
           break;
         default:
+          className = '';
           break;
       }
       switch (this.props.category) {

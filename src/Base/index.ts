@@ -1,5 +1,7 @@
+import _ from 'lodash';
+
 export const initClassName = (thisRef, classExtention?: () => string | null) => {
-  let className = thisRef._reactInternalFiber.type.name.toLowerCase();
+  let className = thisRef._reactInternalFiber.elementType.name.toLowerCase();
   if (classExtention) {
     let extendedClassName = classExtention();
     if (extendedClassName) {
@@ -9,7 +11,7 @@ export const initClassName = (thisRef, classExtention?: () => string | null) => 
   if (typeof (thisRef.props.isVisiable) != 'undefined' && !thisRef.props.isVisiable) {
     className += ' hidden';
   }
-  return className;
+  return _.trim(className);
 };
 
 export default interface IBaseProps {

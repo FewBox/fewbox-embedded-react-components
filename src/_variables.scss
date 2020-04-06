@@ -1,16 +1,16 @@
-@import './colorsystem';
-@import './spacing';
-@import './typography';
-@import './shape';
+@import './variables/colorsystem';
+@import './variables/spacing';
+@import './variables/typography';
+@import './variables/shape';
 
 /****************************************************************/
 /* Colors */
 // Screens and components
-$primary: $gray-500 !default;
-$primary-variant: $gray-700 !default;
+$primary: $gray-700 !default;
+$primary-variant: $gray-900 !default;
 // Floating action buttons, selection controls, like sliders and switches, highlighting selected text, progress bars, links and headlines
-$secondary: $blue-gray-500 !default;
-$secondary-variant: $blue-gray-700 !default;
+$secondary: $blue-gray-700 !default;
+$secondary-variant: $blue-gray-900 !default;
 // Surfaces of components, such as cards, sheets, and menus
 $surface: $white;
 // App background
@@ -18,8 +18,8 @@ $background: $white !default;
 // Error
 $error: $red-500 !default;
 // Typography
-$on-primary: $black;
-$on-secondary: $white;
-$on-background: $white;
-$on-surface: $white;
-$on-error: $black;
+$on-primary: $white !default;
+$on-secondary: $white !default;
+$on-background: $white !default;
+$on-surface: $white !default;
+$on-error: $black !default;

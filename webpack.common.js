@@ -26,7 +26,22 @@ const config = {
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'postcss-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        },
+                    },
                     'sass-loader',
+                    {
+                        loader: 'sass-resources-loader',
+                        options: {
+                            sourceMap: true,
+                            resources: [
+                                path.resolve(__dirname, 'src/_variables.scss')
+                            ]
+                        }
+                    }
                 ]
             }
         ]

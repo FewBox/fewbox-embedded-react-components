@@ -7,7 +7,7 @@ export interface IDividerProps {
 export default class Divider extends React.PureComponent<IDividerProps> {
   public render() {
     return (
-      <div className="fb-divider"></div>
+      <hr className="fb-divider"></hr>
     );
   }
 }

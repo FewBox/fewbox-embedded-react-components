@@ -1,5 +1,6 @@
-@import './mixins';
-@import './html';
+@import './reboots/html';
+@import './mixins/rfs';
+@import './mixins/border-radius';
 
 *::before,
 *::after {
@@ -26,7 +27,7 @@ body {
 }
 hr {
     margin: $hr-margin-y 0;
-    color: $hr-color; // 1
+    color: $hr-color;
     background-color: currentColor;
     border: 0;
     opacity: $hr-opacity;

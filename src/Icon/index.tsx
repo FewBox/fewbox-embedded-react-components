@@ -25,7 +25,7 @@ export default class Icon extends React.PureComponent<IIconProps> {
             if (typeof (this.props.size) != 'undefined') {
                 if (typeof (this.props.size) === 'string') {
                     style = { width: this.props.size };
-                    return null;
+                    return 'icon';
                 }
                 else {
                     //console.log(this.props.size);

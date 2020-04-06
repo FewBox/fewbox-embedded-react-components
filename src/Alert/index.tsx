@@ -10,7 +10,7 @@ export interface IAlertProps extends IBase {
 
 export default class Alert extends React.PureComponent<IAlertProps> {
   public render() {
-    let className = initClassName(this);
+    let className = initClassName(this, 'alert');
     return (
       <div className={className}>
         <span>{this.props.caption}</span>

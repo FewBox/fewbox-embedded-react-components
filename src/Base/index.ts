@@ -1,8 +1,11 @@
 import _ from 'lodash';
 
-export const initClassName = (thisRef, classExtention?: () => string | null) => {
-  let className = thisRef._reactInternalFiber.elementType.name.toLowerCase();
-  if (classExtention) {
+export const initClassName = (thisRef, classExtention: string | (() => string | null)) => {
+  let className = '';
+  if (typeof (classExtention) == 'string') {
+    className = classExtention;
+  }
+  else {
     let extendedClassName = classExtention();
     if (extendedClassName) {
       className = ` ${extendedClassName}`;
